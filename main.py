@@ -94,4 +94,4 @@ async def stop(ctx):
 async def ping(ctx):
     await ctx.send(f'`Latency : {round(client.latency * 1000)} ms`')
 
-client.run(os.DISCORD_TOKEN)
+client.run(os.getenv("DISCORD_TOKEN"))
